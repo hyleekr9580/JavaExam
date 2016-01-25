@@ -350,6 +350,8 @@ public class Picture
         }
     }
 
+
+
     static class Canvas
     {
         private static Canvas canvas = new Canvas();
