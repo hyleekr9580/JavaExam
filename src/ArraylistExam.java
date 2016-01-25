@@ -35,14 +35,11 @@ public class ArraylistExam {
 
         // for 문으로 draw()
         // list 사이즈를 알고 싶으면 list.size();
-//        int num = list.size();
-//        for (int i = 0; i < num; i++) {
-//            Picture pic = list.get(i);
-//            pic.draw();
+        int num = list.size();
+        for (int i = 0; i < num; i++) {
+            Picture pic = list.get(i);
+            pic.draw();
 
-        for (int i = 0; i < ; i++) {
-            
-        }
     }
 }
 
