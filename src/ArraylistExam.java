@@ -43,13 +43,13 @@ public class ArraylistExam {
 
 
         // 1.사진의 간격을 30씩 증가하여 출력하라.
-//        int Width = -30;
-//        for (int i = 0; i < list.size(); i++) {
-//            Picture pic = list.get(i);
-//            pic.translate(Width + 30, 0);
-//            Width = pic.getMaxX();
-//            pic.draw();
-//        }
+        int Width = -30;
+        for (int i = 0; i < list.size(); i++) {
+            Picture pic = list.get(i);
+            pic.translate(Width + 30, 0);
+            Width = pic.getMaxX();
+            pic.draw();
+        }
 
 
         // 2. 가로 길이의 총합
