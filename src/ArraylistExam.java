@@ -43,13 +43,13 @@ public class ArraylistExam {
 
 
         // 1.사진의 간격을 30씩 증가하여 출력하라.
-        int Width = -30;
-        for (int i = 0; i < list.size(); i++) {
-            Picture pic = list.get(i);
-            pic.translate(Width + 30, 0);
-            Width = pic.getMaxX();
-            pic.draw();
-        }
+//        int Width = -30;
+//        for (int i = 0; i < list.size(); i++) {
+//            Picture pic = list.get(i);
+//            pic.translate(Width + 30, 0);
+//            Width = pic.getMaxX();
+//            pic.draw();
+//        }
 
 
         // 2. 가로 길이의 총합
@@ -94,26 +94,27 @@ public class ArraylistExam {
 //        for (int i = 0; i < list.size(); i++) {
 //            Picture pic = list.get(i);
 //            if (pic.getWidth() < pic.getHeight()) {
-//                list.get(1).draw();
+//                list.get(i).draw();
+//        break;
 //            }
 //        }
 
 
         // 6.세로의 사진만 찾아서 matches(ArrayList)에 저장
+        ArrayList<Picture> matches = new ArrayList<>();
 
-//        int Width = -30;
-//        for (int i = 0; i < list.size(); i++) {
-//            Picture pic = list.get(i);
-//            if (pic.getWidth() < pic.getHeight()) {
-//                pic.translate(Width + 30, 0);
-//                Width = pic.getMaxX();
-//                ArrayList<Picture> matches = new ArrayList<>();
-//                matches.add(list.get(i));
-//                pic.draw();
-//
-//            }
-//
-//        }
+        int Width = -30;
+        for (int i = 0; i < list.size(); i++) {
+            Picture pic = list.get(i);
+            if (pic.getWidth() < pic.getHeight()) {
+                pic.translate(Width + 30, 0);
+                Width = pic.getMaxX();
+                matches.add(list.get(i));
+                pic.draw();
+
+            }
+
+        }
 
     }
 
